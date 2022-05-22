@@ -49,7 +49,7 @@ def saveData(dic):
         "mongodb://user60972586:Sztu0520@dds-wz9jmh3t1y3u133m-pub.mongodb.rds.aliyuncs.com:3717/admin")
     mydb = myclient["webpage_statistic"]
 
-    mycol = mydb["data2"]
+    mycol = mydb["data"]
     a = datetime.now()
     mydict = {
         "time": a,

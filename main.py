@@ -14,7 +14,7 @@ def sql():
             print(time.now(), "出问题了,100s后重新尝试")
             time.sleep(100 * second)
         # 休眠时间，单位：秒
-        time.sleep(10 * second)
+        time.sleep(3 * second)
 
 
 if __name__ == '__main__':

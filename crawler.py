@@ -11,6 +11,7 @@ def sql():
         if dic["code"] == 200:
             utils.saveData(dic)
         else:
+            print(dic)
             print(time.now(), "出问题了,100s后重新尝试")
             time.sleep(100 * second)
         # 休眠时间，单位：秒

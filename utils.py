@@ -10,7 +10,7 @@ from pyecharts import options as opts
 from pyecharts.charts import Line
 from pyecharts.commons.utils import JsCode
 
-beijing = timezone(timedelta(hours=8))
+beijing = timezone(timedelta(hours=8)) #在Github Action上运行爬虫程序，存储的数据会有时差区别
 myclient = pymongo.MongoClient(
     "mongodb://user60972586:Sztu0520@dds-wz9jmh3t1y3u133m-pub.mongodb.rds.aliyuncs.com:3717/admin")
 mydb = myclient["webpage_statistic"]
@@ -151,7 +151,7 @@ def saveData(dic):
     保存数据到MongoDB上
     '''
 
-    mycol = mydb["data2"]
+    mycol = mydb["data1"]
     a = datetime.now()
     mydict = {
         "time": a,
